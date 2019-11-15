@@ -17,8 +17,8 @@ export class AppComponent {
 
   ngOnInit(){ 
     //get back an observable
-    let observable = this.http.get("https://api.github.com/users/hemme82");
-    observable.subscribe((response) => console.log(response));
+    // let observable = this.http.get("https://api.github.com/users/hemme82");
+    // observable.subscribe((response) => console.log(response));
   }
 
   //private svc: is the the same as

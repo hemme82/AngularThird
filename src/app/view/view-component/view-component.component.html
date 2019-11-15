@@ -1,1 +1,11 @@
-<p>view-component works!</p>
+User name: <input type="text" [(ngModel)]="userName">
+<button (click)="search()">Search</button>
+
+<!-- if no ngIf here, will get errors cause properties not defined.
+or add ? to respone?.Login if we want to p tags to appear -->
+<div *ngIf ="response">
+    <p>Login name: {{response.login}} </p>
+    <p>Number of repos: {{response.public_repos}}</p>
+    <p>Number of gists: {{response.public_gists}}</p>
+    <p>Number of followers: {{response.followers}}</p>
+</div>
